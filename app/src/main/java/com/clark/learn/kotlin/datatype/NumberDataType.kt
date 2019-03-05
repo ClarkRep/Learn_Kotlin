@@ -3,7 +3,7 @@ package com.clark.learn.kotlin.datatype
 /**
  * @author Clark
  * @description
- * Number类型:
+ * 2.2、Number类型:
  * 1. 浮点型 Double（64位）、Float（32位）
  * 2. 整型 Long（64位）、Int（32位）、Short（16位）
  * 3. 字节 Byte（8位）

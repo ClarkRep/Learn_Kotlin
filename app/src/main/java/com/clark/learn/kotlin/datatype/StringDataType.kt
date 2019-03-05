@@ -3,7 +3,7 @@ package com.clark.learn.kotlin.datatype
 /**
  * @author Clark
  * @description
- * Kotlin 字符串
+ * 2.4、字符串
  * 1、字符串就是一串 char ；
  * 2、kotlin 中的 == 与 Java 的 equals 是等价的；
  * 3、kotlin 如果想比较两个对象是否相等，使用 === 。

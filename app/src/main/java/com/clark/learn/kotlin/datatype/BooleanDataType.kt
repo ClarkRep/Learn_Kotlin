@@ -2,7 +2,8 @@ package com.clark.learn.kotlin.datatype
 
 /**
  * @author Clark
- * @description Boolean 数据类型，只有true和false两种值
+ * @description
+ * 2.1、Boolean 数据类型，只有true和false两种值
  * @date 2019/3/4
  */
 
