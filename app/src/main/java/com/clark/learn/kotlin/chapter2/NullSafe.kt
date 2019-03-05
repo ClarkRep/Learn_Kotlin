@@ -1,4 +1,4 @@
-package com.clark.learn.kotlin.datatype
+package com.clark.learn.kotlin.chapter2
 
 /**
  * @author Clark
