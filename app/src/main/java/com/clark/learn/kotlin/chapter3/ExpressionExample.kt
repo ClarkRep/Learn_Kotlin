@@ -17,13 +17,37 @@ private const val MODE_RELEASE = "2"
 
 
 fun main() {
+
+    //中缀表达式 in 的使用
+    val array: Array<String> = arrayOf("-name", "Xman")
+    if ("-name" in array) {
+        println(array.indexOf("-name") + 1)
+    }
+    //使用自己定义的中缀表达式 on，轻易不要自己定义中缀表达式，容易混淆具体含义
+    val book: Book = Book()
+    val desk: Desk = Desk()
+    println("book on desk = ${book on desk}")
+
 //    ifExpression("1")
 
     whenExpression()
 }
 
 /**
- * if 表达式
+ * 定义一个Book类，在里面定义一个中缀表达式 on
+ */
+class Book {
+    //自己定义一个类似 in 的中缀表达式，DSL
+    infix fun on(desk: Desk): Boolean {
+        return true
+    }
+}
+
+class Desk
+
+
+/**
+ * 分支表达式 if
  */
 fun ifExpression(model: String) {
 
@@ -46,6 +70,9 @@ fun ifExpression(model: String) {
     println("登陆$result")
 }
 
+/**
+ * when 表达式
+ */
 fun whenExpression() {
 
     val arg = 10

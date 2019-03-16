@@ -40,14 +40,6 @@ class Complex(var real: Double, var imaginary: Double) {
     }
 }
 
-class Book {
-    //自己定义一个类似 in 的中缀表达式，DSL
-    infix fun on(desk: Desk): Boolean {
-        return true
-    }
-}
-
-class Desk
 
 fun main() {
 
@@ -60,16 +52,5 @@ fun main() {
     a.plus(Any())
 
     println("a() = ${a()}")
-
-
-    //中缀表达式 in 的使用
-    val array: Array<String> = arrayOf("-name", "Xman")
-    if ("-name" in array) {
-        println(array.indexOf("-name") + 1)
-    }
-    //使用自己定义的中缀表达式 on，轻易不要自己定义中缀表达式，容易混淆具体含义
-    val book: Book = Book()
-    val desk: Desk = Desk()
-    println("book on desk = ${book on desk}")
 
 }
