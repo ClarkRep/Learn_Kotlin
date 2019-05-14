@@ -31,9 +31,9 @@ Kotlin 的 Number 数据类型对比 Java 的，将拆装箱合为一体，没�
 
 ![Char数据类型 - 转义字符](img_char_type.png)
 
-Char类型：
-字符对应 Java 的 Character；  
-占两个字节，表示一个16位的 Unicode 字符；  
-字符用单引号 '' 引起来，例如：'a','0','\n'。
+Char类型：</br>
+字符对应 Java 的 Character；</br>
+占两个字节，表示一个16位的 Unicode 字符；</br>
+字符用单引号 '' 引起来，例如：'a','0','\n'。</br>
 
   
