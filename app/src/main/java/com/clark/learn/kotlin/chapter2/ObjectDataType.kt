@@ -4,6 +4,7 @@ package com.clark.learn.kotlin.chapter2
  * @author Clark
  * @description
  * 2.5、类和对象：
+ * 类的继承
  * * 默认类是 final 修饰的，如果想要某个类可以被继承，那么需要在 class 前面加上 open 关键字；
  * * 提取多个类的共性得到一个更抽象的类，即父类；
  * * 子类拥有父类的一切特征；
