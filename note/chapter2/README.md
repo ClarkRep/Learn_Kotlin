@@ -96,7 +96,7 @@ println(rawString)
 * 一个类通常可以有很多个具体的对象
 * 一个对象本质上只能从属于一个类
 * 类和对象的关系是**一对多**的关系
-[类和对象的关系是 1对多](img_one_class_to_objects.png)
+![类和对象的关系是 1对多](img_one_class_to_objects.png)
 * 对象也经常被称作 "类的对象" 或者 "类的实例"
 
 举例：
