@@ -18,33 +18,34 @@
 * 类似 Java 的 final，只是类似，并不是等价；
 * 不可能被重新赋值；
 > 举例：</br>
-> 运行时常量：val x = getX()</br>
-> 编译期常量：const val x = 2</br>
+> 运行时常量：val x = getX() </br>
+> 编译期常量：const val x = 2 </br>
 
 2. 什么是变量？
 * var = variable
 > 举例：
-> var x = "HelloWorld"  //定义变量
-> x = "HiWorld"  //再次赋值
+> var x = "HelloWorld"  //定义变量 /br>
+> x = "HiWorld"  //再次赋值 </br>
 
 3. 类型推导
 * 编译器可以推导量的类型
-> val string = "Hello"  //推导出 String 类型
-> val int = 5   //Int 类型
-> var x = getString() + 5   //String类型
+> val string = "Hello"  //推导出 String 类型 </br>
+> val int = 5   //Int 类型 </br>
+> var x = getString() + 5   //String类型 </br>
 
 通过 Tools --> Kotlin --> Show Kotlin Bytecode 可以查看 Kotlin 被编译成的字节码文件。
 
 ## 3.2、函数（function）
-参考 /chapter3/FunctionExample.kt
-在 Java 中，没有返回值的函数默认返回 void；在 Kotlin 中，没有返回值的函数默认返回 Unit。
+> 参考 /chapter3/FunctionExample.kt </br>
+
+在 java 中，没有返回值的函数默认返回 void； </br>
+在 kotlin 中，没有返回值的函数默认返回 Unit。 </br>
 
 ### 函数
-
 什么是函数？
 * 以特定功能组织起来的代码块
-> fun [函数名] ([参数列表]):[返回值类型]{[函数体]}
-> fun [函数名] ([参数列表]) = [表达式]
+> fun [函数名] ([参数列表]):[返回值类型]{[函数体]} </br>
+> fun [函数名] ([参数列表]) = [表达式] </br>
 
 Kotlin常规函数的写法：
 ```
