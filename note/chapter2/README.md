@@ -193,5 +193,5 @@ array[i] = "Hello"  //给第i个成员赋值
 array.length    //数组的长度
 ```
 
-基本类型的数组
+基本类型的数组</br>
 ![基本类型的数组](img_basic_type_array.png)
