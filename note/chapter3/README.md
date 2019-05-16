@@ -17,9 +17,9 @@
 * val = value，值类型；
 * 类似 Java 的 final，只是类似，并不是等价；
 * 不可能被重新赋值；
-> 举例：
-> 运行时常量：val x = getX()
-> 编译期常量：const val x = 2
+> 举例：</br>
+> 运行时常量：val x = getX()</br>
+> 编译期常量：const val x = 2</br>
 
 2. 什么是变量？
 * var = variable
