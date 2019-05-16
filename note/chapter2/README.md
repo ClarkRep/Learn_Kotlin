@@ -122,7 +122,8 @@ val notNull:String = null //错误，不能为空
 val nullable:String ?= null //正确，可以为空
 ```
 
-对于不为空的变量，可以直接使用；可空的变量，不能直接使用：
+对于不为空的变量，可以直接使用；</br>
+可空的变量，不能直接使用：
 ```kotlin
 notNull.length //正确，不为空的值可以直接使用
 nullable.length //错误，可能为空，不能直接获取长度
@@ -133,3 +134,64 @@ nullable.length //错误，可能为空，不能直接获取长度
 nullable!!.lenght //正确，强制认定 nullable 不为空；如果为 nullable 为空，抛出异常：KotlinNullPointerException
 nullable?.lenght //正确，若 nullable 为空，则返回空
 ```
+
+### 2.6.2 智能类型转换
+java 中的 instanceof 是用来判断**某个对象**是否是**某个类型**；</br>
+在 kotlin 中有同样的判断字段 is，相对于 java，is 字段更加智能；</br>
+使用 is 判断类型匹配之后，可以直接调用该类型对应的方法，而不需要进行强制类型转换。
+```kotlin
+val parent: Parent = Child()
+//智能类型转换
+if (parent is Child) {
+    //因为前面已经判断了 parent 是 Child 类型了，所以不需要进行类型转换就可以调用 Child 的方法了。
+    println(parent.logChild())
+}
+```
+
+在 kotlin 中，对某个对象进行类型转换的时候，可以有两种方式，一种安全的，一种不安全的：
+* as 强制转换为对应类型，如果类型转换失败，则抛异常 ClassCastException。
+* as? 安全的类型转换，如果类型转换失败，则转换为null。
+```kotlin
+// as 强制类型转换为Child，如果类型转换失败，则抛异常 ClassCastException。
+val parent2 = Parent()
+val sub2 = parent2 as Child
+sub2.logChild()
+
+// as? 安全的类型转换，如果类型转换失败，则转换为null。
+val parent3 = Parent()
+val sub3 = parent3 as? Child
+println(sub3?.logChild())
+```
+
+## 2.7  包（package）
+* 包就是命名空间
+* 包的声明必须在非注释代码的第一行
+* 类的全名 com.clark.learn.kotlin.chapter2.HelloWorld
+
+## 2.8  区间（Range）
+> Demo见：RangeExample.kt
+* 一个数学上的概念，表示范围
+* ClosedRange 的子类，IntRange 最常用
+* 基本写法：
+```kotlin
+0..100 //表示 [0,100]
+0 until 100 //表示 [0,100)
+i in 0..100 //判断 i 是否在区间 [0,100] 中
+0 untils -1 //则是个没有数据的空区间
+```
+
+## 2.9  数组（Array）
+数组的使用方法
+* 基本写法
+```
+val array:Array<String> = arrayOf(...)
+```
+* 基本操作
+```
+print array[i]  //输出第i个成员
+array[i] = "Hello"  //给第i个成员赋值
+array.length    //数组的长度
+```
+
+基本类型的数组
+![基本类型的数组](img_basic_type_array.png)
